@@ -7,17 +7,18 @@ pub fn is_five(x: &i32) -> bool {
 
 
 fn swap(a: &mut i32, b: &mut i32) {
-  // Store the value of a temporarily
+  //Stores the value of a temporarily
   let temp = *a;
-  // Assign the value of b to a
+  //Assigns the value of b to a
   *a = *b;
-  // Assign the stored value of a (temp) to b
+  //Assigns the stored value of a (temp) to b
   *b = temp;
 }
 
 
 
 fn add_and_multiply(a: &i32, b: &mut i32) {
+  //Adds the value of `a` to `b` and then multiplies the result by 2
   *b = (*b + *a) * 2;
 }
 
